@@ -1,3 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  :root {
+    --mobile-size: 375px --desktop-size: 1440px;
+  }
+  .deskop-header {
+    /* background-image: url("./assets/image-hero-desktop.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background: #135135;
+    @apply h-full w-full
+  }
+
+
+}
+
+
+@layer utilities {
+  .point:hover {
+    border-radius: .3rem;
+    padding: 10px;
+    backdrop-filter: blur(200px);
+    background: slategray;
+  }
+}
